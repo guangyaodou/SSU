@@ -1,0 +1,6 @@
+.DS_Store
+.idea/
+.env
+data/
+text_completion_data/
+

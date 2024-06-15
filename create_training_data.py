@@ -45,7 +45,6 @@ def generate_dataset(book_path, output_dir, book_name):
     print(f"Dataset generated and saved to {output_file}")
 
 if __name__ == "__main__":
-    #python create_training_data.py --book_path data/enchanted_april/pg16389.txt --output_dir data/enchanted_april/ --book_name enchanted_april
     parser = argparse.ArgumentParser(description='Generate QA dataset from text.')
     parser.add_argument('--book_path', type=str, help='the path to the book')
     parser.add_argument('--output_dir', type=str, help='the path to the output directory')

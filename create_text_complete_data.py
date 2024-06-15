@@ -53,7 +53,6 @@ def generate_dataset(book_path, output_dir, book_name, num_samples=50):
     print(f"Dataset generated and saved to {output_file}")
 
 if __name__ == "__main__":
-    # python create_text_complete_data.py --book_path data/sherlock_holmes/pg1661.txt --output_dir text_completion_data/ --book_name sherlock_holmes --num_samples 50
     parser = argparse.ArgumentParser(description='Process text completion data.')
     parser.add_argument('--book_path', type=str, help='the path to the book')
     parser.add_argument('--output_dir', type=str, help='the path to the output directory')

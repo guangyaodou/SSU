@@ -83,4 +83,4 @@ You need to adjust the evaluation config file [metrics_config.py](config/metrics
 * fine_tuned_filename: The checkpoint file name of your fine-tuned or modified model.
 * book_name_json: The book name in JSONL format that you want to evaluate.
 
-To evaluate benchmark performance, please refer to other public github repositories that allows you to evaluate the performance of the model. 
+To evaluate benchmark performance, please refer to other public github repositories that allow you to evaluate the performance of the model. 

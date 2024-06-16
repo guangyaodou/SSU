@@ -31,14 +31,6 @@ def rouge_score(text1, text2):
     return scores[0]['rouge-1']['f'], scores[0]['rouge-2']['f'], scores[0]['rouge-l']['f']
 
 
-def bleurt_score(references, candidates):
-    checkpoint = "/nlp/data/gydou/llm_copyright/bleurt/BLEURT-20"
-    scorer = score.BleurtScorer(checkpoint)
-    scores = scorer.score(references=references, candidates=candidates)
-    assert isinstance(scores, list) and len(scores) == 1
-    return scores
-
-
 # model_name = "bert-large-cased"
 def cosine_similarity_score(text1, text2, model_name, model_dir):
     bnb_config = BitsAndBytesConfig(
